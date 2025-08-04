@@ -84,7 +84,7 @@ export default function HomePage() {
         <Header />
         <TimeBar /> 
         
-        <div className="container mx-auto px-4 py-8">
+        <div className="container hidden mx-auto px-4 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Main Content */}
             <main className="flex-1" role="main">
