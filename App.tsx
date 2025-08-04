@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { LanguageProvider } from "./src/hooks/useLanguage";
 import { Router } from "./src/components/Router";
-import "./styles/globals.css";
+import "./src/styles/globals.css";
 
 // Theme initialization
 function initializeTheme() {

@@ -19,7 +19,7 @@ export default function NotFoundPage() {
     keywords: language === 'id' 
       ? '404, halaman tidak ditemukan, error, conime'
       : '404, page not found, error, conime',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/404`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/404`
   };
 
   return (

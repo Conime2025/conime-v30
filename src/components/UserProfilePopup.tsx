@@ -35,7 +35,7 @@ export function UserProfilePopup({ isOpen, onClose, anchorRef }: UserProfilePopu
   const user = {
     isLoggedIn: true, // Changed to show logged in state
     name: "Koni",
-    email: "koni@conime.com",
+    email: "koni@conime.id",
     role: "Editor",
     avatar: null
   };

@@ -18,7 +18,7 @@ export default function TermsPage() {
     keywords: language === 'id' 
       ? 'syarat ketentuan, terms of service, aturan penggunaan, conime'
       : 'terms of service, usage rules, user agreement, conime',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/terms`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/terms`
   };
 
   return (
@@ -58,7 +58,7 @@ export default function TermsPage() {
                 <section>
                   <h2>1. Penerimaan Syarat</h2>
                   <p>
-                    Dengan mengakses dan menggunakan website Conime (conime.com), Anda menyetujui untuk 
+                    Dengan mengakses dan menggunakan website Conime (conime.id), Anda menyetujui untuk 
                     terikat oleh Syarat dan Ketentuan ini. Jika Anda tidak setuju dengan syarat ini, 
                     mohon tidak menggunakan website kami.
                   </p>
@@ -209,7 +209,7 @@ export default function TermsPage() {
                     Jika Anda percaya konten di website kami melanggar hak cipta Anda, silakan hubungi:
                   </p>
                   <ul>
-                    <li>Email: copyright@conime.com</li>
+                    <li>Email: copyright@conime.id</li>
                     <li>Sertakan bukti kepemilikan dan lokasi konten yang dilanggar</li>
                     <li>Kami akan merespons dalam 24-48 jam</li>
                   </ul>
@@ -228,7 +228,7 @@ export default function TermsPage() {
                     Jika Anda memiliki pertanyaan tentang Syarat dan Ketentuan ini, silakan hubungi kami di:
                   </p>
                   <ul>
-                    <li>Email: legal@conime.com</li>
+                    <li>Email: legal@conime.id</li>
                     <li>Melalui halaman kontak di website</li>
                   </ul>
                 </section>
@@ -238,7 +238,7 @@ export default function TermsPage() {
                 <section>
                   <h2>1. Acceptance of Terms</h2>
                   <p>
-                    By accessing and using the Conime website (conime.com), you agree to be bound 
+                    By accessing and using the Conime website (conime.id), you agree to be bound 
                     by these Terms of Service. If you do not agree to these terms, please do not use our website.
                   </p>
                 </section>
@@ -388,7 +388,7 @@ export default function TermsPage() {
                     If you believe content on our website infringes your copyright, please contact:
                   </p>
                   <ul>
-                    <li>Email: copyright@conime.com</li>
+                    <li>Email: copyright@conime.id</li>
                     <li>Include proof of ownership and location of infringing content</li>
                     <li>We will respond within 24-48 hours</li>
                   </ul>
@@ -407,7 +407,7 @@ export default function TermsPage() {
                     If you have questions about these Terms of Service, please contact us at:
                   </p>
                   <ul>
-                    <li>Email: legal@conime.com</li>
+                    <li>Email: legal@conime.id</li>
                     <li>Through the contact page on our website</li>
                   </ul>
                 </section>

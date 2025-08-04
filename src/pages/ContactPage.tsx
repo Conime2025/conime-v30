@@ -35,7 +35,7 @@ export default function ContactPage() {
     keywords: language === 'id' 
       ? 'kontak conime, hubungi kami, email conime, kerjasama, partnership'
       : 'contact conime, contact us, conime email, collaboration, partnership',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/contact`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/contact`
   };
 
   const handleSubmit = (e: React.FormEvent) => {

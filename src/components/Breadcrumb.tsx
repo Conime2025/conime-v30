@@ -32,7 +32,7 @@ export function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
       {/* Home Link */}
       <button
         onClick={() => navigate('/')}
-        className="flex items-center  hover:text-primary transition-colors"
+        className="flex items-center border-0 hover:text-primary transition-colors"
         aria-label={language === 'id' ? 'Beranda' : 'Home'}
       >
         <HomeIcon className="h-4 w-4" />
@@ -49,7 +49,7 @@ export function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
           ) : (
             <button
               onClick={() => handleClick(item)}
-              className="hover:text-primary transition-colors"
+              className="hover:text-primary border-0 transition-colors"
             >
               {item.label}
             </button>

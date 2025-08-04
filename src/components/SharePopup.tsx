@@ -198,7 +198,7 @@ export function SharePopup({ isOpen, onClose, title, url, image }: SharePopupPro
                   {title}
                 </h4>
                 <p className="text-xs text-muted-foreground line-clamp-1">
-                  conime.com
+                  conime.id
                 </p>
               </div>
             </div>

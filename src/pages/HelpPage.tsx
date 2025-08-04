@@ -34,7 +34,7 @@ export default function HelpPage() {
     keywords: language === 'id' 
       ? 'help center, FAQ, bantuan, dukungan, panduan, conime'
       : 'help center, FAQ, support, help, guide, conime',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/help`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/help`
   };
 
   const faqData = [
@@ -50,16 +50,16 @@ export default function HelpPage() {
       id: 2,
       question: language === 'id' ? 'Bagaimana cara mengirim tips berita?' : 'How to send news tips?',
       answer: language === 'id'
-        ? 'Kirim tips berita ke email tips@conime.com dengan menyertakan sumber yang jelas dan kredibel. Tim kami akan review dan memverifikasi informasi sebelum dipublikasi.'
-        : 'Send news tips to tips@conime.com with clear and credible sources. Our team will review and verify information before publication.',
+        ? 'Kirim tips berita ke email tips@conime.id dengan menyertakan sumber yang jelas dan kredibel. Tim kami akan review dan memverifikasi informasi sebelum dipublikasi.'
+        : 'Send news tips to tips@conime.id with clear and credible sources. Our team will review and verify information before publication.',
       category: 'content'
     },
     {
       id: 3,
       question: language === 'id' ? 'Apakah bisa request review anime tertentu?' : 'Can I request specific anime reviews?',
       answer: language === 'id'
-        ? 'Ya! Kirim request review melalui halaman kontak atau email request@conime.com. Sertakan judul anime dan alasan mengapa anime tersebut menarik untuk di-review.'
-        : 'Yes! Send review requests via contact page or email request@conime.com. Include anime title and reasons why the anime is interesting to review.',
+        ? 'Ya! Kirim request review melalui halaman kontak atau email request@conime.id. Sertakan judul anime dan alasan mengapa anime tersebut menarik untuk di-review.'
+        : 'Yes! Send review requests via contact page or email request@conime.id. Include anime title and reasons why the anime is interesting to review.',
       category: 'content'
     },
     {
@@ -74,16 +74,16 @@ export default function HelpPage() {
       id: 5,
       question: language === 'id' ? 'Bagaimana cara berkolaborasi dengan Conime?' : 'How to collaborate with Conime?',
       answer: language === 'id'
-        ? 'Untuk kerjasama partnership, sponsor, atau kolaborasi konten, hubungi kami di partnership@conime.com dengan proposal yang detail termasuk bentuk kolaborasi yang diinginkan.'
-        : 'For partnership, sponsorship, or content collaboration, contact us at partnership@conime.com with detailed proposal including desired collaboration form.',
+        ? 'Untuk kerjasama partnership, sponsor, atau kolaborasi konten, hubungi kami di partnership@conime.id dengan proposal yang detail termasuk bentuk kolaborasi yang diinginkan.'
+        : 'For partnership, sponsorship, or content collaboration, contact us at partnership@conime.id with detailed proposal including desired collaboration form.',
       category: 'partnership'
     },
     {
       id: 6,
       question: language === 'id' ? 'Website lambat atau error, apa yang harus dilakukan?' : 'Website is slow or has errors, what should I do?',
       answer: language === 'id'
-        ? 'Coba refresh halaman atau clear cache browser. Jika masalah berlanjut, laporkan ke support@conime.com dengan detail browser yang digunakan dan screenshot error.'
-        : 'Try refreshing the page or clearing browser cache. If problem persists, report to support@conime.com with browser details and error screenshots.',
+        ? 'Coba refresh halaman atau clear cache browser. Jika masalah berlanjut, laporkan ke support@conime.id dengan detail browser yang digunakan dan screenshot error.'
+        : 'Try refreshing the page or clearing browser cache. If problem persists, report to support@conime.id with browser details and error screenshots.',
       category: 'technical'
     },
     {

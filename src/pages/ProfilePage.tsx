@@ -36,13 +36,13 @@ export default function ProfilePage() {
   const [profile, setProfile] = useState({
     name: "Koni",
     username: "koni_editor",
-    email: "koni@conime.com",
+    email: "koni@conime.id",
     phone: "+62 812-3195-8808",
     bio: language === 'id' 
       ? "Editor senior di Conime yang berdedikasi untuk memberikan konten anime dan manga terbaik untuk para otaku Indonesia."
       : "Senior editor at Conime dedicated to providing the best anime and manga content for Indonesian otaku.",
     location: "Jakarta, Indonesia",
-    website: "https://conime.com",
+    website: "https://conime.id",
     joinDate: "Januari 2025",
     avatar: null as string | null
   });

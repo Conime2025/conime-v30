@@ -67,7 +67,7 @@ export default function HomePage() {
       ? 'Dapatkan berita anime terbaru, ulasan manga, rekomendasi game, dan informasi terkini dunia hiburan Jepang di Conime.'
       : 'Get the latest anime news, manga reviews, game recommendations, and current information about Japanese entertainment at Conime.',
     keywords: 'anime, manga, game, berita anime, review manga, rekomendasi game, otaku, weeb, anime news, manga review',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}`,
+    url: `https://conime.id${language === 'en' ? '/en' : ''}`,
     type: 'website'
   };
 
@@ -93,7 +93,7 @@ export default function HomePage() {
 
  
     <div className="bird-container hidden">          
-<svg width="100" height="100" viewBox="0 0 463 463" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg className="hidden" width="100" height="100" viewBox="0 0 463 463" fill="none" xmlns="http://www.w3.org/2000/svg">
  
 <ellipse className="shadowBird" cx="241.5" cy="404.5" rx="121.5" ry="42.5" fill="#666565" fill-opacity="0.7"/>
 <g className="bird" clip-path="url(#clip0_3477_1183)">

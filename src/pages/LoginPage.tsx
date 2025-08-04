@@ -39,7 +39,7 @@ export default function LoginPage() {
       ? 'Masuk ke akun Conime Anda untuk mengakses fitur eksklusif, menyimpan artikel favorit, dan berinteraksi dengan komunitas.'
       : 'Login to your Conime account to access exclusive features, save favorite articles, and interact with the community.',
     keywords: `${language === 'id' ? 'login, masuk, akun conime' : 'login, sign in, conime account'}`,
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/login`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/login`
   };
 
   return (

@@ -40,7 +40,7 @@ export default function FeatureRequestPage() {
     keywords: language === 'id' 
       ? 'saran fitur, feature request, ide fitur, pengembangan conime'
       : 'feature request, feature ideas, conime development',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/feature-request`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/feature-request`
   };
 
   const handleSubmit = (e: React.FormEvent) => {

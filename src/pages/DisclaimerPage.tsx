@@ -25,7 +25,7 @@ export default function DisclaimerPage() {
     keywords: language === 'id' 
       ? 'disclaimer, AI content, tanggung jawab editorial, conime, teknologi AI'
       : 'disclaimer, AI content, editorial responsibility, conime, AI technology',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/disclaimer`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/disclaimer`
   };
 
   return (

@@ -97,16 +97,16 @@ export function Header() {
             </div>
 
             {/* Navigation (Desktop) */}
-            <nav className="hidden md:flex items-center h-16 header-nav">
+            <nav className="hidden md:flex items-center h-16 headerNav">
               {menuItems.map((item) => (
                 <button
                   key={item.path}
                   data-active={item.isActive}
                   className={`
-                    px-4 h-16 text-sm font-medium !border-2 !border-conime-500/0 transition-all duration-200 font-roboto relative group flex items-center
+                    px-2 lg:px-4 h-16 text-sm font-medium !border-2 !border-conime-500/0 hover:border-b-2 hover:border-primary hover:bg-black/0 hover:!text-primary transition-all duration-200 font-roboto relative group flex items-center
                     ${item.isActive 
-                      ? 'text-primary' 
-                      : 'text-muted-foreground hover:text-primary'
+                      ? 'text-primary border-b-2 border-primary' 
+                      : 'text-muted-foreground hover:!text-primary'
                     }
                   `}
                   onClick={() => handleMenuClick(item.path)}

@@ -31,7 +31,7 @@ export default function FAQPage() {
     keywords: language === 'id' 
       ? 'FAQ, pertanyaan, jawaban, bantuan, conime, anime'
       : 'FAQ, questions, answers, help, conime, anime',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/faq`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/faq`
   };
 
   const faqData = [

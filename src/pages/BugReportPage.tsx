@@ -48,7 +48,7 @@ export default function BugReportPage() {
       ? 'Laporkan masalah atau bug yang Anda temukan di website Conime. Tim kami akan segera memperbaikinya.'
       : 'Report issues or bugs you found on the Conime website. Our team will fix them promptly.',
     keywords: `${language === 'id' ? 'laporan bug, masalah website, bantuan teknis' : 'bug report, website issues, technical support'}`,
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/report-bug`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/report-bug`
   };
 
   return (

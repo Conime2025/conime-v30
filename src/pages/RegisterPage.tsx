@@ -56,7 +56,7 @@ export default function RegisterPage() {
       ? 'Daftar akun Conime gratis untuk mengakses fitur eksklusif, menyimpan artikel favorit, dan bergabung dengan komunitas anime.'
       : 'Create a free Conime account to access exclusive features, save favorite articles, and join the anime community.',
     keywords: `${language === 'id' ? 'daftar, registrasi, akun baru conime' : 'register, sign up, new conime account'}`,
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/register`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/register`
   };
 
   return (

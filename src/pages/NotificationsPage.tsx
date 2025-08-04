@@ -193,7 +193,7 @@ export default function NotificationsPage() {
       ? 'Lihat semua notifikasi Anda di Conime. Update artikel terbaru, like, komentar, dan pengikut baru.'
       : 'View all your notifications on Conime. Latest article updates, likes, comments, and new followers.',
     keywords: 'notifications, notifikasi, updates, anime news',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/notifications`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/notifications`
   };
 
   return (

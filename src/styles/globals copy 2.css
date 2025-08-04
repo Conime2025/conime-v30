@@ -242,30 +242,30 @@
 
   /* ===== BUTTON STYLING & HOVER FIXES ===== */
   button {
-    transition: all 0.2s ease;
-    font-family: var(--font-roboto);
+    transition: all 0.2s ease !important;
+    font-family: var(--font-roboto) !important;
   }
   button[data-variant="default"], .btn-primary {
-    background-color: var(--color-primary);
-    color: white;
-    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    border: 1px solid var(--color-primary) !important;
   }
   button[data-variant="default"]:hover:not(:disabled),
   .btn-primary:hover:not(:disabled) {
-    background-color: var(--color-conime-600);
-    color: white;
-    border-color: var(--color-conime-600);
+    background-color: var(--color-conime-600) !important;
+    color: white !important;
+    border-color: var(--color-conime-600) !important;
   }
   button[data-variant="outline"], .btn-outline {
-    background-color: transparent;
-    color: var(--color-foreground);
-    border: 1px solid var(--color-border);
+    background-color: transparent !important;
+    color: var(--color-foreground) !important;
+    border: 1px solid var(--color-border) !important;
   }
   button[data-variant="outline"]:hover:not(:disabled),
   .btn-outline:hover:not(:disabled) {
-    background-color: var(--color-primary);
-    color: white;
-    border-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    border-color: var(--color-primary) !important;
   }
 
   /* ===== PAGINATION ===== */
@@ -273,12 +273,12 @@
   nav[aria-label*="pagination"] button,
   nav[aria-label*="navigasi"] button,
   .pagination button {
-    min-width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
+    min-width: 2.5rem !important;
+    height: 2.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
   }
   button[data-variant="default"][aria-current="page"],
   button[data-variant="default"].active,
@@ -288,7 +288,7 @@
   .pagination button[aria-current="page"],
   .pagination button.active {
     background-color: var(--color-primary);
-    color: white;
+    color: white !important;
     border-color: var(--color-primary);
   }
   button[data-variant="default"][aria-current="page"]:hover,
@@ -298,8 +298,8 @@
   nav button[aria-current="page"]:hover,
   .pagination button[aria-current="page"]:hover,
   .pagination button.active:hover {
-    background-color: var(--color-conime-600);
-    color: white;
+    background-color: var(--color-primary);
+    color: white !important;
     border-color: var(--color-conime-600);
   }
   [class*="pagination"] button:not([data-active="true"]):not([aria-current="page"]):not(.active),
@@ -308,7 +308,7 @@
   nav[aria-label*="pagination"] button[variant="outline"],
   nav[aria-label*="navigasi"] button[variant="outline"] {
     background-color: transparent;
-    color: var(--color-foreground);
+    color: var(--color-foreground) !important;
     border: 1px solid var(--color-border);
   }
   [class*="pagination"] button:not([data-active="true"]):not([aria-current="page"]):not(.active):hover:not(:disabled),
@@ -317,67 +317,64 @@
   nav[aria-label*="pagination"] button[variant="outline"]:hover:not(:disabled),
   nav[aria-label*="navigasi"] button[variant="outline"]:hover:not(:disabled) {
     background-color: var(--color-primary);
-    color: white;
+    color: white important;
     border-color: var(--color-primary) ;
   }
 
   nav button {
-    border: none;
+    border: none !important;
   }
   
   /* ===== HEADER NAVIGATION ===== */ 
-  .headerNav button {
-    border: 0px solid transparent;
-    margin-right: 0.5rem;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
+  .header-nav button {
+    border: 0px solid transparent !important;
+    margin-right: 0.5rem !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.2s ease !important;
   }
-  .headerNav button:hover,
-  .headerNav button[data-active="true"] {
+  .header-nav button:hover,
+  .header-nav button[data-active="true"] {
     border-bottom: 2px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
   }
-  .headerNav button:hover{
-    color:var(--color-primary) !important;
-  }
 
   /* ===== NOTIFICATION BADGE ===== */
-  .notif-badge { display: none; }
-  .notif-badge.show { display: block; }
+  .notif-badge { display: none !important; }
+  .notif-badge.show { display: block !important; }
 
   /* ===== BREADCRUMB ===== */
   .breadcrumb button,
   .breadcrumb a,
   [data-breadcrumb] button,
   [data-breadcrumb] a { 
-    border: none;
-    transition: color 0.2s ease;
+    border: none !important;
+    transition: color 0.2s ease !important;
   }
   .breadcrumb button:hover,
   .breadcrumb a:hover,
   [data-breadcrumb] button:hover,
   [data-breadcrumb] a:hover {
-    color: var(--color-primary); 
+    color: var(--color-primary) !important; 
   }
   .breadcrumb .active,
   [data-breadcrumb] .active {
-    color: var(--color-primary);  
+    color: var(--color-primary) !important;  
   }
 
   /* ===== CATEGORY FILTER ===== */
   .category-filter button,
   [data-category-filter] button {
-    background-color: transparent;
-    color: var(--color-foreground);
-    border: 1px solid var(--color-border);
+    background-color: transparent !important;
+    color: var(--color-foreground) !important;
+    border: 1px solid var(--color-border) !important;
   }
   .category-filter button:hover,
   .category-filter button.active,
   [data-category-filter] button:hover,
   [data-category-filter] button[data-active="true"] {
-    background-color: var(--color-primary);
-    color: white;
-    border-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    border-color: var(--color-primary) !important;
   }
 
   /* ===== DISABLED BUTTON ===== */
@@ -385,166 +382,166 @@
   button:disabled:hover,
   button[disabled],
   button[disabled]:hover {
-    opacity: 0.5;
-    cursor: not-allowed;
-    color: var(--color-muted-foreground);
-    background-color: var(--color-muted);
-    border-color: var(--color-border);
-    pointer-events: none;
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    color: var(--color-muted-foreground) !important;
+    background-color: var(--color-muted) !important;
+    border-color: var(--color-border) !important;
+    pointer-events: none !important;
   }
 
   /* ===== ARTICLE QUOTES ===== */
   .article-quote,
   .quote-highlight {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, var(--color-primary)/5, var(--color-primary)/10);
-    border-left: 4px solid var(--color-primary);
-    border-radius: 0.5rem;
-    font-style: italic;
-    position: relative;
+    margin: 2rem 0 !important;
+    padding: 1.5rem !important;
+    background: linear-gradient(135deg, var(--color-primary)/5, var(--color-primary)/10) !important;
+    border-left: 4px solid var(--color-primary) !important;
+    border-radius: 0.5rem !important;
+    font-style: italic !important;
+    position: relative !important;
   }
   .article-quote::before,
   .quote-highlight::before {
-    content: '"';
-    font-size: 4rem;
-    color: var(--color-primary);
-    position: absolute;
-    top: -10px;
-    left: 1rem;
-    line-height: 1;
-    opacity: 0.3;
+    content: '"' !important;
+    font-size: 4rem !important;
+    color: var(--color-primary) !important;
+    position: absolute !important;
+    top: -10px !important;
+    left: 1rem !important;
+    line-height: 1 !important;
+    opacity: 0.3 !important;
   }
   .article-quote p,
   .quote-highlight p {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-foreground);
-    padding-left: 1rem;
+    margin: 0 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-foreground) !important;
+    padding-left: 1rem !important;
   }
   .article-quote cite,
   .quote-highlight cite,
   .quote-author {
-    display: block;
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    font-style: normal;
-    font-weight: 500;
-    color: var(--color-primary);
-    text-align: right;
+    display: block !important;
+    margin-top: 1rem !important;
+    font-size: 0.9rem !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    color: var(--color-primary) !important;
+    text-align: right !important;
   }
 
     /* ===== ARTICLE LEAD ===== */
   .article-lead {
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-muted-foreground);
-    margin-bottom: 2rem;
+    font-style: italic !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: var(--color-muted-foreground) !important;
+    margin-bottom: 2rem !important;
   }
 
   /* ===== YOUTUBE EMBED ===== */
   .youtube-embed {
-    margin: 2rem 0;
+    margin: 2rem 0 !important;
   }
   .youtube-embed .relative {
-    background-color: var(--color-muted);
-    border-radius: 0.5rem;
-    overflow: hidden;
+    background-color: var(--color-muted) !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
-                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+                0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
   .youtube-embed iframe {
-    border: none;
-    width: 100%;
-    height: 100%;
+    border: none !important;
+    width: 100% !important;
+    height: 100% !important;
   }
   .youtube-embed figcaption {
-    font-style: italic;
-    background: var(--color-primary)/5;
-    padding: 0.75rem;
-    border-radius: 0 0 0.5rem 0.5rem;
-    border-top: 1px solid var(--color-border);
+    font-style: italic !important;
+    background: var(--color-primary)/5 !important;
+    padding: 0.75rem !important;
+    border-radius: 0 0 0.5rem 0.5rem !important;
+    border-top: 1px solid var(--color-border) !important;
   }
 
   /* ===== FEATURED LABEL ===== */
   .label-unggulan,
   .featured-label {
-    background-color: var(--color-primary);
-    color: white;
-    font-weight: 500;
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.375rem;
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    font-weight: 500 !important;
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 0.375rem !important;
   }
 
   /* ===== CUSTOM FORM ELEMENTS ===== */
   /* Checkbox Styling */
   [data-slot="checkbox"] {
-    border-color: var(--color-border);
-    background-color: var(--color-input-background);
-    transition: all 0.2s ease;
+    border-color: var(--color-border) !important;
+    background-color: var(--color-input-background) !important;
+    transition: all 0.2s ease !important;
   }
   [data-slot="checkbox"]:hover {
-    border-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
   }
   [data-slot="checkbox"][data-state="checked"] {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: white;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: white !important;
   }
   [data-slot="checkbox"][data-state="checked"]:hover {
-    background-color: var(--color-conime-600);
-    border-color: var(--color-conime-600);
+    background-color: var(--color-conime-600) !important;
+    border-color: var(--color-conime-600) !important;
   }
 
   /* Radio Group Styling */
   [data-slot="radio-group-item"] {
-    border-color: var(--color-border);
-    background-color: var(--color-input-background);
-    transition: all 0.2s ease;
+    border-color: var(--color-border) !important;
+    background-color: var(--color-input-background) !important;
+    transition: all 0.2s ease !important;
   }
   [data-slot="radio-group-item"]:hover {
-    border-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
   }
   [data-slot="radio-group-item"][data-state="checked"] {
-    border-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
   }
   [data-slot="radio-group-item"][data-state="checked"]:hover {
-    border-color: var(--color-conime-600);
+    border-color: var(--color-conime-600) !important;
   }
   [data-slot="radio-group-indicator"] > div {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
   }
   [data-slot="radio-group-item"]:hover [data-slot="radio-group-indicator"] > div {
-    background-color: var(--color-conime-600);
+    background-color: var(--color-conime-600) !important;
   }
 
   /* Switch Styling */
   [data-slot="switch"] {
-    transition: all 0.2s ease;
+    transition: all 0.2s ease !important;
   }
   [data-slot="switch"]:hover[data-state="checked"] {
-    background-color: var(--color-conime-600);
+    background-color: var(--color-conime-600) !important;
   }
 
   /* Label Hover Effect */
   label[for] {
-    cursor: pointer;
-    transition: color 0.2s ease;
+    cursor: pointer !important;
+    transition: color 0.2s ease !important;
   }
   label[for]:hover {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
   }
 
   /* Focus Visible States */
   [data-slot="checkbox"]:focus-visible,
   [data-slot="radio-group-item"]:focus-visible,
   [data-slot="switch"]:focus-visible {
-    outline: none;
-    ring: 3px solid var(--color-ring);
-    ring-opacity: 0.5;
+    outline: none !important;
+    ring: 3px solid var(--color-ring) !important;
+    ring-opacity: 0.5 !important;
   }
 
   /* ===== ARTICLE CONTENT (from CSS 2) ===== */
@@ -815,9 +812,9 @@ html {
 /* ===== PERFORMANCE OPTIMIZATIONS ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
-    animation-duration: 0.01ms;
-    animation-iteration-count: 1;
-    transition-duration: 0.01ms;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

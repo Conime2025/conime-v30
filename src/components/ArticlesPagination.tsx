@@ -160,7 +160,7 @@ export function ArticlesPagination({ activeCategory, articlesPerPage = 6 }: Arti
             {/* Content area with flex-grow to fill remaining space */}
             <CardContent className="p-4 space-y-3 flex flex-col flex-grow">
               {/* Title - fixed 2 lines */}
-              <h3 className="font-semibold line-clamp-2 mb-2 group-hover:text-primary transition-colors leading-tight text-base h-12">
+              <h3 className="font-semibold line-clamp-2 mb-2 group-hover:text-primary transition-colors leading-tight text-base h-fit">
                 {article.title}
               </h3>
               
@@ -250,7 +250,7 @@ export function ArticlesPagination({ activeCategory, articlesPerPage = 6 }: Arti
               variant="outline"
               onClick={prevPage}
               disabled={currentPage === 1}
-              className="hover:border-primary hover:text-primary"
+              className="hover:border-primary hover:bg-primary text-foreground"
               aria-label={language === 'id' ? 'Halaman sebelumnya' : 'Previous page'}
             >
               <ChevronLeftIcon className="h-4 w-4 mr-2" />
@@ -278,10 +278,10 @@ export function ArticlesPagination({ activeCategory, articlesPerPage = 6 }: Arti
                     variant={currentPage === pageNum ? "default" : "outline"}
                     size="sm"
                     onClick={() => handlePageChange(pageNum)}
-                    className={`w-10 h-10 p-0 hover:border-primary hover:text-primary ${
+                    className={`w-10 h-10 p-0 hover:border-primary hover:bg-primary text-foreground ${
                       currentPage === pageNum 
-                        ? 'bg-primary text-white border-primary hover:bg-primary/90 hover:text-white' 
-                        : ''
+                        ? 'bg-primary  text-white border-primary hover:bg-primary/90 hover:text-white' 
+                        : 'text-foreground border hover:border-primary/90 hover:bg-primary/90 hover:text-white'
                     }`}
                     aria-label={`${language === 'id' ? 'Halaman' : 'Page'} ${pageNum}`}
                     aria-current={currentPage === pageNum ? "page" : undefined}
@@ -298,7 +298,7 @@ export function ArticlesPagination({ activeCategory, articlesPerPage = 6 }: Arti
               variant="outline"
               onClick={nextPage}
               disabled={currentPage === totalPages}
-              className="hover:border-primary hover:text-primary"
+              className="hover:border-primary hover:text-foreground"
               aria-label={language === 'id' ? 'Halaman selanjutnya' : 'Next page'}
             >
               {language === 'id' ? 'Selanjutnya' : 'Next'}

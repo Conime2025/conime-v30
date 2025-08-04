@@ -16,10 +16,10 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "WebSite",
           "name": "Conime",
           "description": "Portal berita anime, manga, komik, film dan game terpercaya",
-          "url": "https://conime.com",
+          "url": "https://conime.id",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://conime.com/search?q={search_term_string}",
+            "target": "https://conime.id/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         };
@@ -31,8 +31,8 @@ export function StructuredData({ type, data }: StructuredDataProps) {
           "@type": "Organization",
           "name": "Conime",
           "description": "Portal berita anime, manga, komik, film dan game terpercaya",
-          "url": "https://conime.com",
-          "logo": "https://conime.com/logo.png",
+          "url": "https://conime.id",
+          "logo": "https://conime.id/logo.png",
           "sameAs": [
             "https://twitter.com/conime",
             "https://instagram.com/conime",
@@ -58,7 +58,7 @@ export function StructuredData({ type, data }: StructuredDataProps) {
               "name": "Conime",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://conime.com/logo.png"
+                "url": "https://conime.id/logo.png"
               }
             },
             "datePublished": data.datePublished,

@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     keywords: language === 'id' 
       ? 'kebijakan privasi, privacy policy, perlindungan data, conime'
       : 'privacy policy, data protection, personal information, conime',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/privacy`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/privacy`
   };
 
   return (
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
                   <p>
                     Conime ("kami", "kita", atau "milik kami") berkomitmen untuk melindungi privasi pengguna ("Anda" atau "milik Anda"). 
                     Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi 
-                    pribadi Anda ketika menggunakan situs web conime.com.
+                    pribadi Anda ketika menggunakan situs web conime.id.
                   </p>
                 </section>
 
@@ -151,7 +151,7 @@ export default function PrivacyPage() {
                     Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:
                   </p>
                   <ul>
-                    <li>Email: privacy@conime.com</li>
+                    <li>Email: privacy@conime.id</li>
                     <li>Melalui halaman kontak di website</li>
                   </ul>
                 </section>
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
                   <p>
                     Conime ("we", "us", or "our") is committed to protecting user privacy ("you" or "your"). 
                     This Privacy Policy explains how we collect, use, store, and protect your personal 
-                    information when using the conime.com website.
+                    information when using the conime.id website.
                   </p>
                 </section>
 
@@ -254,7 +254,7 @@ export default function PrivacyPage() {
                     If you have questions about this Privacy Policy, please contact us at:
                   </p>
                   <ul>
-                    <li>Email: privacy@conime.com</li>
+                    <li>Email: privacy@conime.id</li>
                     <li>Through the contact page on our website</li>
                   </ul>
                 </section>

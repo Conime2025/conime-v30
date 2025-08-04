@@ -178,7 +178,7 @@ export default function ListPage({ category, page = "1" }: ListPageProps) {
     title: `${displayCategory} - Conime | ${language === 'id' ? 'Portal Berita Anime' : 'Anime News Portal'}${currentPage > 1 ? ` - ${t ? t('common.page') : (language === 'id' ? 'Halaman' : 'Page')} ${currentPage}` : ''}`,
     description: `${language === 'id' ? `Kumpulan artikel ${displayCategory.toLowerCase()} terbaru dan terlengkap di Conime` : `Latest and complete ${displayCategory.toLowerCase()} articles collection at Conime`}. ${language === 'id' ? 'Berita anime, review, rekomendasi terpercaya' : 'Trusted anime news, reviews, recommendations'}.`,
     keywords: `${category}, ${displayCategory.toLowerCase()}, anime, manga, ${language === 'id' ? 'berita anime indonesia' : 'anime news'}`,
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/${category}${currentPage > 1 ? `?page=${currentPage}` : ""}`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/${category}${currentPage > 1 ? `?page=${currentPage}` : ""}`
   };
 
   useEffect(() => {

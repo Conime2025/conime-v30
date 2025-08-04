@@ -121,7 +121,7 @@ export function Sidebar() {
   };
 
   return (
-    <div className="w-full md:w-80 flex-shrink-0" aria-label="Artikel sampingan">
+    <div className="w-full lg:w-80 flex-shrink-0" aria-label="Artikel sampingan">
       <div className="space-y-6">
         {/* Last Viewed Articles */}
         <LastViewed maxItems={6} showClearButton={true} />

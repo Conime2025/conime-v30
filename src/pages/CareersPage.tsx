@@ -30,7 +30,7 @@ export default function CareersPage() {
     keywords: language === 'id' 
       ? 'karir conime, lowongan kerja, content writer, developer, anime, media'
       : 'conime careers, job openings, content writer, developer, anime, media',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/careers`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/careers`
   };
 
   const jobOpenings = [
@@ -121,7 +121,7 @@ export default function CareersPage() {
   const handleApply = (jobTitle: string) => {
     const subject = encodeURIComponent(`Application for ${jobTitle} - Conime`);
     const body = encodeURIComponent(`Hi Conime Team,\n\nI am interested in applying for the ${jobTitle} position.\n\nPlease find my resume and portfolio attached.\n\nThank you for your consideration.\n\nBest regards,`);
-    window.location.href = `mailto:careers@conime.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:careers@conime.id?subject=${subject}&body=${body}`;
   };
 
   return (

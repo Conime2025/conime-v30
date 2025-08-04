@@ -217,7 +217,7 @@ export default function SinglePage({ category, slug }: SinglePageProps) {
     title: `${article.title[language]} - Conime`,
     description: article.summary?.[language] || article.excerpt?.[language] || '',
     keywords: article.tags?.join(', ') || '',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/${category}/${slug}`,
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/${category}/${slug}`,
     image: article.image,
     type: 'article',
     publishedTime: article.dateISO,

@@ -43,7 +43,7 @@
 }
 
 .strokeEffect { 
-  animation: stroke-blink .2s ease-in-out infinite;
+  animation: stroke-blink 1s ease-in-out infinite;
 }
 
 @keyframes stroke-blink {
@@ -53,13 +53,13 @@
 
 .wing-left {
     border: 1px solid white;
-  animation: flapLeft 0.2s infinite ease-in-out;
+  animation: flapLeft 1s infinite ease-in-out;
   transform-origin: center center;
 }
 
 .wing-right {
     border: 1px solid white;
-  animation: flapRight 0.2s infinite ease-in-out;
+  animation: flapRight 1s infinite ease-in-out;
   transform-origin: center center;
 }
 

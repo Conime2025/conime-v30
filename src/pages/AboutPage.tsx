@@ -35,7 +35,7 @@ export default function AboutPage() {
     keywords: language === 'id' 
       ? 'tentang conime, about us, portal anime, berita anime, budaya pop, AI content'
       : 'about conime, about us, anime portal, anime news, pop culture, AI content',
-    url: `https://conime.com${language === 'en' ? '/en' : ''}/about`
+    url: `https://conime.id${language === 'en' ? '/en' : ''}/about`
   };
 
   const coverage = [

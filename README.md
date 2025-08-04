@@ -194,7 +194,7 @@ const content = language === 'id' ? 'Bahasa Indonesia' : 'English';
 ### Environment Variables
 ```env
 VITE_APP_NAME=Conime
-VITE_APP_URL=https://conime.com
+VITE_APP_URL=https://conime.id
 VITE_APP_DESCRIPTION=Platform berita anime terdepan di Indonesia
 ```
 
@@ -241,8 +241,8 @@ Copyright © 2025 Conime. All rights reserved.
 ## 📞 Support
 
 ### Contact Information
-- **Email**: support@conime.com
-- **Website**: https://conime.com
+- **Email**: support@conime.id
+- **Website**: https://conime.id
 - **Help Center**: /help
 
 ### Help Resources
