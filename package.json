@@ -57,9 +57,9 @@
   "author": "Conime Team",
   "license": "MIT",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/conime/website"
-  }, 
+  "type": "git",
+  "url": "https://github.com/Conime2025/conime-v30.git"
+},
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
