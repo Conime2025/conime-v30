@@ -1,0 +1,74 @@
+.bird-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bird {
+   animation: float 3s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-cycle {
+  0%   { transform: translateY(0); }     /* posisi awal (bawah) */
+  10%  { transform: translateY(-20px); } /* naik cepat */
+  40%  { transform: translateY(-20px); } /* diam di atas */
+  50%  { transform: translateY(0); }     /* turun cepat */
+  80%  { transform: translateY(0); }     /* diam di bawah */
+  100% { transform: translateY(0); }     /* ulang */
+}
+
+.eye {
+  animation: blink 4s infinite;
+  transform-origin: center center !important;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  92%, 96% { transform: scaleY(0.1); }
+}
+.shadowBird { 
+  transform-origin: center center;
+  animation: shadow-scale 3s ease-in-out infinite;
+}
+
+@keyframes shadow-scale {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.1) scaleY(1); }
+}
+
+.strokeEffect { 
+  animation: stroke-blink .2s ease-in-out infinite;
+}
+
+@keyframes stroke-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.wing-left {
+    border: 1px solid white;
+  animation: flapLeft 0.2s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+.wing-right {
+    border: 1px solid white;
+  animation: flapRight 0.2s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes flapLeft {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(30deg); }
+}
+
+@keyframes flapRight {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-30deg); }
+}

@@ -1,0 +1,1 @@
+// This file is deleted - using src/main.tsx instead

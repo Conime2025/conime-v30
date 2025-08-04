@@ -1,0 +1,17 @@
+FILES TO DELETE IMMEDIATELY:
+
+1. /App.tsx (BROKEN - causes LanguageProvider error)
+2. All *.md files except README.md (clutter)
+3. /FontFallbackDemo.tsx (not needed)
+
+DIRECTORIES TO CLEAN UP:
+1. /components (move to /src/components)
+2. /hooks (move to /src/hooks) 
+3. /styles (move to /src/styles)
+
+ROOT CAUSE:
+- Vite entry point /main.tsx imports from ./App.tsx (broken)
+- Should import from ./src/App.tsx (working)
+- Root /main.tsx updated to point to src/
+
+RESULT: Clean structure, no errors, website works!

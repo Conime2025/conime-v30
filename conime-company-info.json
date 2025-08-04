@@ -1,0 +1,51 @@
+{
+  "company": {
+    "name": "CoNime",
+    "tagline": {
+      "id": "Portal Berita Anime Terpercaya",
+      "en": "Trusted Anime News Portal"
+    },
+    "description": {
+      "id": "Portal berita daring yang menyajikan informasi dan ulasan seputar karya budaya pop visual dari berbagai negara",
+      "en": "Online news portal presenting information and reviews about visual pop culture works from various countries"
+    },
+    "version": "3.0",
+    "domain": "conime.id",
+    "launchDate": "2025-06-29",
+    "location": {
+      "country": "Indonesia",
+      "region": "Jawa Timur",
+      "city": "Lamongan"
+    },
+    "contact": {
+      "email": "conime2025@gmail.com",
+      "whatsapp": "+62 812-3195-8808"
+    },
+    "timeline": [
+      {
+        "date": "2025-06-03",
+        "version": "1.0",
+        "milestone": {
+          "id": "Awal CoNime sebagai GitHub Pages",
+          "en": "CoNime started as GitHub Pages"
+        }
+      },
+      {
+        "date": "2025-06-29",
+        "version": "2.0",
+        "milestone": {
+          "id": "Launch resmi domain conime.id",
+          "en": "Official launch of conime.id domain"
+        }
+      },
+      {
+        "date": "2025-07-01",
+        "version": "3.0",
+        "milestone": {
+          "id": "Pengembangan CoNime v3.0 (dalam proses)",
+          "en": "CoNime v3.0 development (in progress)"
+        }
+      }
+    ]
+  }
+}

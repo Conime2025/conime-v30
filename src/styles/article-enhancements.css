@@ -1,0 +1,253 @@
+/* ===== ARTICLE CONTENT STYLING ===== */
+
+/* Article container with better spacing */
+.article-content {
+  line-height: 1.8;
+  font-size: 1rem;
+  color: var(--foreground);
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-family: var(--font-roboto);
+}
+
+.article-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.article-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.article-content ul, 
+.article-content ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.article-content strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Figure styling */
+.article-content figure {
+  margin: 2.5rem 0;
+}
+
+.article-content figcaption {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+/* Quote highlights - untuk quote dari staff/penulis */
+.article-content .quote-highlight {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: rgba(var(--primary-rgb), 0.05);
+  border-left: 4px solid var(--primary);
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.article-content .quote-highlight::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 3rem;
+  color: var(--primary);
+  opacity: 0.3;
+  font-family: serif;
+}
+
+.article-content .quote-highlight p {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  padding-left: 1rem;
+}
+
+.article-content .quote-highlight cite {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.article-content .quote-highlight cite::before {
+  content: "– ";
+}
+
+/* YouTube embed */
+.article-content .youtube-embed {
+  margin: 2.5rem 0;
+}
+
+/* Content images */
+.article-content .content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Mid-article staff quotes */
+.article-content .staff-quote {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--primary);
+}
+
+.article-content .staff-quote .quote-content {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--foreground);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.article-content .staff-quote .quote-author {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.article-content .staff-quote .quote-author::before {
+  content: "– ";
+}
+
+/* Comment quote styling */
+.quote-comment {
+  background: rgba(var(--primary-rgb), 0.1);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border-left: 3px solid var(--primary);
+}
+
+/* Blockquote general styling */
+.article-content blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary);
+  background: var(--muted);
+  border-radius: 0.5rem;
+}
+
+.article-content blockquote p {
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ===== CARD HEIGHT CONSISTENCY ===== */
+
+/* Ensure all news cards have consistent height in grid layout */
+.news-card-grid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-card-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* Grid container ensures equal heights */
+.news-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.news-grid-container > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ===== RESPONSIVE CARD ADJUSTMENTS ===== */
+
+@media (max-width: 768px) {
+  .news-grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .article-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  
+  .article-content p {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+.news-card-link:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+.news-card-button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+/* ===== LOADING STATES ===== */
+
+.news-card-skeleton {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
