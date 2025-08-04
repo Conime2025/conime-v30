@@ -84,7 +84,7 @@ export default function HomePage() {
         <Header />
         <TimeBar /> 
         
-        <div className="container hidden mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Main Content */}
             <main className="flex-1" role="main">
@@ -92,7 +92,7 @@ export default function HomePage() {
 
 
  
-    <div className="bird-container">          
+    <div className="bird-container hidden">          
 <svg width="100" height="100" viewBox="0 0 463 463" fill="none" xmlns="http://www.w3.org/2000/svg">
  
 <ellipse className="shadowBird" cx="241.5" cy="404.5" rx="121.5" ry="42.5" fill="#666565" fill-opacity="0.7"/>
